@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'Minsk';
+	src: url('fonts/Minsk.otf');
+}
+
+@font-face {
+	font-family: 'Edition';
+	src: url('fonts/Edition.TTF');
+}
+
+@font-face {
+	font-family: 'TTL';
+	src: url('fonts/TTLakes-Medium.otf');
+}
+
+body, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'TTL';
+	background-color: #f7f7f7;
+}
+
+p, h1, h2, h3, h4 {
+	color: #333;
+}
+
+.header-wrapper {
+	width: 96%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+header {
+	background: #f7f7f7;
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+header h1 {
+	margin: 0;
+	text-indent: -10000px;
+	background: url(images/logo.png) no-repeat;;
+	width: 120px;
+	float: left;
+	cursor: pointer;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+header nav li{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #4e4e4e;
+    text-transform: uppercase;
+}
+
+
+header:after, footer:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.wrapper #main-banner {
+	width: 100%;
+	min-height: 100vh;
+	background: url(images/background.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* #----------------------------------------#
+do this for a center link
+#----------------------------------------#
+
+.#main-banner #about-link:hover {
+	filter: blur(1.4px);
+  	-webkit-filter: blur(1.4px);
+	opacity: 0.6;
+} */
+
+
+footer {
+	font-family: 'Minsk';
+	text-align: right;
+    background: #202020;
+	padding: 15px 30px 0;
+}
+footer .wrapper {
+	display: inline-block;
+	padding: 10px
+}
+footer h2 {
+	float: right;
+	padding: 0;
+	margin: 0;
+	color: #eee;
+	line-height: 90px;
+}
+footer img {
+	float: right;
+	padding: 10px;
+	margin: 10px;
+}

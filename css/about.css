@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'Barkentina';
+	src: url('../fonts/Barkentina.otf');
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.content-row {
+	display: flex;	
+	justify-content: center;
+	align-content: space-between;
+	flex-direction: row;
+}
+
+.content-row > section {
+	flex: 1 1 50%;
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+
+}
+
+.photo {
+	background: url(../images/about-1.jpg) no-repeat ;
+}
+
+.statistics {
+	background: url(../images/about-2.jpg) no-repeat;
+}
+
+.statistics ul {
+	padding-top: 20%;
+}
+
+.statistics ul li {
+	font-size: 1.4em;
+	font-family: 'Barkentina';
+	width: 300px;
+	text-transform: uppercase;
+	list-style-type: none;
+	padding: 10px;
+	margin: 70px auto;
+}
+
+.statistics li.check {
+    padding-left: 60px;
+    background: url(../images/check.png) no-repeat left 10px;
+/*---text transform-------------------*/
+	-webkit-transform: rotate(-25deg); 
+	-moz-transform: rotate(-25deg); 
+	-o-transform: rotate(-25deg); 
+	-ms-transform: rotate(-25deg); 
+	transform: rotate(-25deg); 
+}
+
+.check span {
+	font-size: 0.8em;
+	font-weight: bold;
+	font-style: italic;
+	font-family: 'TTL';
+}
